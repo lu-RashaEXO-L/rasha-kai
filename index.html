@@ -197,6 +197,19 @@
       margin-right: 8px;
     }
 
+    /* Change layout for small screens */
+    @media (max-width: 768px) {
+      .video-boxes {
+        flex-direction: column; /* Stack videos vertically on small screens */
+      }
+
+      iframe {
+        max-width: 100%; /* Make video iframe fill the width */
+        height: 250px; /* Adjust height */
+        margin-bottom: 20px; /* Add space between videos */
+      }
+    }
+
     @media (min-width: 768px) {
       .intro-section {
         flex-direction: row;
